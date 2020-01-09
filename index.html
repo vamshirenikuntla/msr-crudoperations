@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Registration</title>
+    </head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+    <style>
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+    td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    }
+
+    tr:nth-child(even) {
+    background-color: #dddddd;
+    }
+</style>
+<body>
+    <div>
+        <table id="student_table">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Class</th>
+                <th>Year</th>
+                <th>City</th>
+                <th>Country</th>
+                <th>Actions</th>
+            </tr>
+        </table>
+        <form id="entry_handler" style="display:flex;flex-direction:column">
+            <div style="display:flex;flex-direction:row">
+                <div style="display:flex;flex-direction:column">
+                    <label >Student ID : </label>
+                    <label>Student Name : </label>
+                    <label>Email : </label>
+                    <label >Class : </label>
+                    <label>Enrollment Year : </label>
+                    <label>City : </label>
+                    <label>Country : </label>
+                </div>
+                <div style="display:flex;flex-direction:column">
+                    <input id="student_id" type="text" />
+                    <input id="student_name" type="text" />
+                    <input id="s_email" type="email" />
+                    <input id="s_class" type="text" />
+                    <input id="enroll_year" />
+                    <input id="city" type="text" />
+                    <input id="country" type="text" />
+                </div>
+            </div>
+            <input type="submit" value="Save" style="width: 20%;height: 20px;margin-top: 10;color: aqua;background-color: black" >
+            <input type="reset" value="Clear" style="width: 20%;height: 20px;margin-top: 10;color:black;background-color: red" >
+        </form>
+    </div>
+
+</body>
+
+</html>
